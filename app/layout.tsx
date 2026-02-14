@@ -1,5 +1,6 @@
 import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
+import Cursor from "@/components/cursor";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.className}`}>{children}</body>
+      <body className={`${bebasNeue.className}`}>
+        <Cursor />
+        {children}
+      </body>
     </html>
   );
 }

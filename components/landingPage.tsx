@@ -16,8 +16,8 @@ export default function LandingPage() {
   return (
     <div className="text-white mt-50 px-4 pb-50 overflow-hidden">
       <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 50, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, margin: "-100px" }}
         className="w-full max-w-4xl mx-auto flex justify-center lg:justify-start align-center rounded-sm"
@@ -32,8 +32,8 @@ export default function LandingPage() {
 
       <div className="flex justify-center lg:justify-end mt-20 lg:mt-30 w-full max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
           className="w-full max-w-3xl rounded-sm"
@@ -49,13 +49,15 @@ export default function LandingPage() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
         transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         viewport={{ once: true }}
         className="flex justify-center items-center w-full text-center px-4 md:px-40 mt-20 lg:mt-30 mx-auto max-w-6xl"
       >
-        <p className={`${RobotoMono.className} font-light text-sm md:text-base leading-6 md:leading-8`}>
+        <p
+          className={`${RobotoMono.className} font-light text-sm md:text-base leading-6 md:leading-8`}
+        >
           I <span className="font-bold text-[#FCF7C0]">love</span> building
           distributed systems and pushing myself beyond the limits to grow my
           knowledge. Simplicity is what carries me as aspired by Steve Jobs.
@@ -63,8 +65,8 @@ export default function LandingPage() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.6, delay: 0.6 }}
         viewport={{ once: true }}
         className={`${RobotoMono.className} flex w-full flex-col md:flex-row justify-between items-center mt-20 lg:mt-30 gap-4 text-sm font-light`}

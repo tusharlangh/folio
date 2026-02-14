@@ -59,9 +59,12 @@ export default function TechStack() {
   }, [mouseX, mouseY]);
 
   return (
-    <div id="tech-stack" className="relative min-h-screen bg-[#575943] flex items-center justify-center py-20 overflow-hidden">
+    <div
+      id="tech-stack"
+      className="relative min-h-screen bg-[#575943] flex items-center justify-center py-20 overflow-hidden"
+    >
       <div className="max-w-[90vw] w-full grid grid-cols-1 md:grid-cols-2 gap-20">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

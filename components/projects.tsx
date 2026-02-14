@@ -43,7 +43,7 @@ export default function Projects() {
     <div
       id="projects"
       ref={containerRef}
-      className="relative min-h-[400vh] bg-[#78603A]"
+      className="relative min-h-[400vh] bg-[rgb(227,225,220)]"
     >
       <div className="sticky top-0 w-full h-screen flex justify-center items-center overflow-hidden">
         <motion.div
@@ -51,16 +51,16 @@ export default function Projects() {
           className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10"
         >
           <div
-            className="text-[#FDFDFD] font-bold"
+            className="text-[rgb(46,46,46)] font-bold"
             style={{ fontSize: "clamp(3rem, 10vw, 12rem)" }}
           >
             FEATURED
           </div>
-          <div className="rotate-0 md:rotate-270 text-sm md:text-xl text-[#FCF7C0] tracking-widest whitespace-nowrap">
+          <div className="rotate-0 md:rotate-270 text-sm md:text-xl text-[rgb(133,115,62)] tracking-widest whitespace-nowrap">
             [PORTFOLIO/CREATIVE]
           </div>
           <div
-            className="text-[#FDFDFD] font-bold"
+            className="text-[rgb(46,46,46)] font-bold"
             style={{ fontSize: "clamp(3rem, 10vw, 12rem)" }}
           >
             PROJECTS
@@ -108,7 +108,7 @@ export default function Projects() {
                     )}
                   </div>
                 </div>
-                <div className="flex justify-between items-center text-[#FCF7C0] font-mono text-sm tracking-widest">
+                <div className="flex justify-between items-center text-[rgb(46,46,46)] font-mono text-sm tracking-widest">
                   <span
                     className={`${RobotoMono.className} text-xs font-semibold`}
                   >
