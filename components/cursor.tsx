@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Cursor() {
   const mouseX = useMotionValue(0);
@@ -21,12 +21,14 @@ export default function Cursor() {
   }, [mouseX, mouseY]);
 
   return (
-    <motion.div
-      style={{
-        translateX: springX,
-        translateY: springY,
-      }}
-      className="fixed top-0 left-0 w-3 h-3 bg-white rounded-full pointer-events-none z-[9999] mix-blend-exclusion"
-    />
+    <div>
+      <motion.div
+        style={{
+          translateX: springX,
+          translateY: springY,
+        }}
+        className="fixed top-0 left-0 w-3 h-3 bg-white rounded-full pointer-events-none z-[9999] mix-blend-exclusion hidden md:block"
+      />
+    </div>
   );
 }
