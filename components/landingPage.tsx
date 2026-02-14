@@ -20,9 +20,9 @@ export default function LandingPage() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, margin: "-100px" }}
-        className="w-220 flex justify-center align-center rounded-sm"
+        className="w-full max-w-4xl mx-auto flex justify-center lg:justify-start align-center rounded-sm"
       >
-        <p className="text-7xl">
+        <p className="text-4xl md:text-7xl text-center lg:text-left">
           COMPUTER SCIENCE STUDENT AT{" "}
           <span className={`bg-[#6B7C63] inline-block px-2`}>
             UNIVERSITY OF ALBERTA
@@ -30,15 +30,15 @@ export default function LandingPage() {
         </p>
       </motion.div>
 
-      <div className="flex justify-end mt-30">
+      <div className="flex justify-center lg:justify-end mt-20 lg:mt-30 w-full max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           viewport={{ once: true, margin: "-100px" }}
-          className="w-180 rounded-sm"
+          className="w-full max-w-3xl rounded-sm"
         >
-          <p className="text-7xl text-right">
+          <p className="text-4xl md:text-7xl text-center lg:text-right">
             BUILDING SOFTWARE THAT FEELS{" "}
             <span className={`${DancingScript.className} text-[#FCF7C0]`}>
               SIMPLE
@@ -53,9 +53,9 @@ export default function LandingPage() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="w-180 flex justiy-center items-center w-full text-center px-40 mt-30"
+        className="flex justify-center items-center w-full text-center px-4 md:px-40 mt-20 lg:mt-30 mx-auto max-w-6xl"
       >
-        <p className={`${RobotoMono.className} font-light text-sm leading-8`}>
+        <p className={`${RobotoMono.className} font-light text-sm md:text-base leading-6 md:leading-8`}>
           I <span className="font-bold text-[#FCF7C0]">love</span> building
           distributed systems and pushing myself beyond the limits to grow my
           knowledge. Simplicity is what carries me as aspired by Steve Jobs.
@@ -67,7 +67,7 @@ export default function LandingPage() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
         viewport={{ once: true }}
-        className={`${RobotoMono.className} flex w-full justify-between items-center mt-30 text-sm font-light`}
+        className={`${RobotoMono.className} flex w-full flex-col md:flex-row justify-between items-center mt-20 lg:mt-30 gap-4 text-sm font-light`}
       >
         {["[NICE TO MEET YOU]", "[SCROLL DOWN]", "[GOOD TO SEE YOU]"].map(
           (text, i) => (

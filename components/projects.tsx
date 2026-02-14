@@ -48,15 +48,21 @@ export default function Projects() {
       <div className="sticky top-0 w-full h-screen flex justify-center items-center overflow-hidden">
         <motion.div
           style={{ scale, opacity }}
-          className="flex justify-center items-center gap-10"
+          className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10"
         >
-          <div className="text-[#FDFDFD] font-bold" style={{ fontSize: 180 }}>
+          <div
+            className="text-[#FDFDFD] font-bold"
+            style={{ fontSize: "clamp(3rem, 10vw, 12rem)" }}
+          >
             FEATURED
           </div>
-          <div className="rotate-270 text-xl text-[#FCF7C0] tracking-widest whitespace-nowrap">
+          <div className="rotate-0 md:rotate-270 text-sm md:text-xl text-[#FCF7C0] tracking-widest whitespace-nowrap">
             [PORTFOLIO/CREATIVE]
           </div>
-          <div className="text-[#FDFDFD] font-bold" style={{ fontSize: 180 }}>
+          <div
+            className="text-[#FDFDFD] font-bold"
+            style={{ fontSize: "clamp(3rem, 10vw, 12rem)" }}
+          >
             PROJECTS
           </div>
         </motion.div>
@@ -79,16 +85,16 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, margin: "-10%" }}
-                className="flex flex-col gap-4 w-[70vw] hover:scale-102 transition-transform duration-500 cursor-pointer"
+                className="flex flex-col gap-4 w-[90vw] md:w-[70vw] hover:scale-102 transition-transform duration-500 cursor-pointer"
               >
                 <div
-                  className={`w-full h-[80vh] bg-white rounded-sm shadow-2xl flex items-center justify-center relative overflow-hidden group`}
+                  className={`w-full h-[50vh] md:h-[80vh] bg-white rounded-sm shadow-2xl flex items-center justify-center relative overflow-hidden group`}
                 >
                   <div className="absolute inset-0 transition-colors duration-500" />
-                  <div className="text-white text-9xl font-bold">
+                  <div className="text-white text-5xl md:text-9xl font-bold">
                     {project.symbol !== "" ? (
                       <p
-                        className={`${font} ${project.bg} h-50 px-20 flex justify-center items-center`}
+                        className={`${font} ${project.bg} py-6 px-10 md:px-20 flex justify-center items-center`}
                       >
                         {project.symbol}
                       </p>

@@ -122,16 +122,16 @@ export default async function ProjectPage({
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-12 mb-32 px-6">
-          <div className="lg:col-span-8">
+        <div className="flex justify-center items-center gap-12 mb-16 md:mb-32 px-2 md:px-6">
+          <div className="w-full max-w-5xl">
             <p
-              className={`text-2xl md:text-4xl mb-24 font-sans text-center mt-10`}
+              className={`text-xl md:text-4xl mb-12 md:mb-24 font-sans text-center mt-10 leading-relaxed`}
             >
               {project.overview}
             </p>
-            <div className="flex justify-center items-center gap-20">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-20">
               {project.metrics.map((metric, i) => (
-                <div key={i} className="flex flex-col gap-2">
+                <div key={i} className="flex flex-col gap-2 items-center md:items-start text-center md:text-left">
                   <span
                     className={`${bebasNeue.className} text-6xl md:text-8xl tracking-tighter`}
                   >
