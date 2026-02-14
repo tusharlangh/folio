@@ -92,7 +92,7 @@ export default function TechStack() {
           </div>
 
           <div className="pt-10">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
               <span className="bg-[#FCF7C0] text-[#1F1D1B] px-6 py-3 font-bold text-sm tracking-wider cursor-pointer hover:bg-white transition-colors">
                 FULL RESUME
               </span>
