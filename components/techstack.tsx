@@ -17,12 +17,12 @@ const skills = [
   {
     category: "LANGUAGES",
     items:
-      "TypeScript, Python, JavaScript, C, SQL (PostgreSQL, MySQL), HTML/CSS",
+      "TypeScript, Go, Python, JavaScript, C, SQL (PostgreSQL, MySQL), HTML/CSS",
   },
   {
     category: "CLOUD & INFRA",
     items:
-      "AWS (Lambda, S3, ECR, API Gateway, ALB), Docker, Serverless Framework",
+      "AWS (Lambda, S3, ECR, API Gateway, ALB), Docker, Serverless Framework, LB, WebSockets",
   },
   {
     category: "FRAMEWORKS",

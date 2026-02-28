@@ -92,9 +92,24 @@ export default async function ProjectPage({
             <span className="text-[10px] uppercase tracking-widest opacity-60">
               [Deliverables]
             </span>
-            <span className="text-sm font-medium uppercase">
-              {project.deliverables}
-            </span>
+            {project.deliverablesUrl ? (
+              <Ticker
+                className={`text-sm font-medium uppercase pointer-events-auto cursor-pointer block w-fit`}
+              >
+                <Link
+                  href={project.deliverablesUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  {project.deliverables}
+                </Link>
+              </Ticker>
+            ) : (
+              <span className="text-sm font-medium uppercase">
+                {project.deliverables}
+              </span>
+            )}
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-[10px] uppercase tracking-widest opacity-60">

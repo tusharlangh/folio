@@ -8,6 +8,7 @@ export type Project = {
   name: string;
   type: string;
   deliverables: string;
+  deliverablesUrl?: string;
   studio: string;
   role: string;
   services: string;
@@ -22,10 +23,36 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "skepsi",
+    name: "SKEPSI",
+    type: "WEB-PLATFORM",
+    deliverables: "Source code",
+    deliverablesUrl: "https://github.com/tusharlangh/skepsi",
+    studio: "Personal",
+    role: "Full Stack Developer",
+    services: "Go, WebSockets, TypeScript, React, CRDT",
+    description:
+      "A real-time collaborative text editor built for unreliable networks. Achieved 130k+ ops/sec and 200ms sync latency with a position-based list CRDT, scaled to 400+ concurrent connections, with observability and offline resilience.",
+    overview:
+      "Skepsi is a real-time collaborative text editor built for unreliable networks. Multiple people edit the same document in sync using a position-based list CRDT no central lock, replicas converge automatically. Edits apply locally and queue for sync when back online; the Go backend and TypeScript/React frontend talk over WebSockets, with undo via inverse ops so everyone sees the same history.",
+    metrics: [
+      { label: "Ops/sec", value: "130k+" },
+      { label: "Sync Latency", value: "200ms" },
+      { label: "Concurrent Connections", value: "400+" },
+      { label: "CRDT Convergence", value: "2.5s" },
+      { label: "Data Loss on Reconnect", value: "0" },
+    ],
+    image: "/skepsi.svg",
+    bg: "bg-[#F34B06]",
+    symbol: "",
+    font: "Montserrat",
+  },
+  {
     slug: "idempo",
     name: "IDEMPO",
     type: "WEBHOOK",
     deliverables: "Source code",
+    deliverablesUrl: "https://github.com/tusharlangh/idempo",
     studio: "Personal",
     role: "Backend Engineer",
     services: "Typescript, Node.js, Postgres, Docker, K6",
@@ -49,6 +76,7 @@ export const projects: Project[] = [
     name: "OCTILLION",
     type: "WEB PLATFORM",
     deliverables: "Live Demo",
+    deliverablesUrl: "https://octillion.vercel.app/",
     studio: "Personal",
     role: "Full Stack Developer",
     services: "Next.js, AWS Lambda, Qdrant, Python",
@@ -72,6 +100,7 @@ export const projects: Project[] = [
     name: "ROOTSEEK",
     type: "MOBILE APPLICATION",
     deliverables: "Source Code",
+    deliverablesUrl: "https://github.com/tusharlangh/rootseekApp",
     studio: "Personal",
     role: "Mobile Developer",
     services: "React Native, Node.js, OpenAI, MongoDB",
