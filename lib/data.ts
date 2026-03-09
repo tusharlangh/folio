@@ -23,6 +23,31 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "sonder",
+    name: "SONDER",
+    type: "WEB-PLATFORM",
+    deliverables: "Live Demo",
+    deliverablesUrl: "https://usesonder.vercel.app/",
+    studio: "Personal",
+    role: "Full Stack Developer",
+    services: "WebGL, GLSL, ThreeJS, TypeScript, Next",
+    description:
+      "A real-time kinetic text lab and visual essence generator. Renders diverse media sources into stylized art using a custom AsciiRenderer and SceneManager, supporting 10+ art styles, 5 export formats, and live WebGL shader pipelines across image, video, webcam, and generative inputs.",
+    overview:
+      "Sonder is a high-performance visual art engine built for creators at the intersection of typography, motion, and algorithmic art. A custom AsciiRenderer and SceneManager drive real-time GLSL shader pipelines that transform any media — uploaded images, video, live webcam streams, or typed text — into stylized renders. Art styles range from ASCII and Braille to Halftone, Dot, and Particle systems, layered with FX presets like Glitch, CRT, and Matrix rain. Granular controls over resolution, font scale, bloom, and character ramps give full creative ownership, while exports cover PNG, MP4, WebM, GIF, and raw WebGL code.",
+    metrics: [
+      { label: "Art Styles", value: "10+" },
+      { label: "Export Formats", value: "5" },
+      { label: "Input Modes", value: "5" },
+      { label: "FX Presets", value: "8+" },
+      { label: "Frame Latency", value: "~16ms" },
+    ],
+    image: "/sonder.svg",
+    bg: "bg-[#F34B06]",
+    symbol: "",
+    font: "Montserrat",
+  },
+  {
     slug: "skepsi",
     name: "SKEPSI",
     type: "WEB-PLATFORM",
